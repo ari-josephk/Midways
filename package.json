@@ -1,5 +1,6 @@
 {
   "scripts": {
+    "install-packages": "(cd front-end && npm install) && (cd back-end && npm install)",
     "client": "cd front-end && npm run build",
     "server": "cd back-end && npm start",
     "dev": "concurrently \"npm run server\" \"npm run client\"",

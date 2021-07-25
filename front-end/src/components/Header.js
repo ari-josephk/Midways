@@ -14,7 +14,7 @@ const Header = props => {
             <nav class="header_nav">
                 
                 <div class="header_logo">
-                    <img src={logo} alt="MeetMe Logo" height="70%"></img>
+                    <img src={logo} alt="MidWays Logo" height="70%"></img>
                 </div>
                 <div className="spacer" />
                 

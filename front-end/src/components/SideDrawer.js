@@ -294,7 +294,7 @@ const SideDrawer = function (props) {
 						)}
 					</div>
 					<li id="about" onClick={handleShow}>
-						<a>About MeetMe</a>
+						<a>About MidWays</a>
 					</li>
 				</ul>
 			) : (
@@ -373,29 +373,29 @@ const SideDrawer = function (props) {
 						)}
 					</div>
 					<li id="about" onClick={handleShow}>
-						<a>About Meet Me</a>
+						<a>About MidWays</a>
 					</li>
 				</ul>
 			)}
 
 			<Modal show={show} onHide={handleClose}>
 				<Modal.Header closeButton>
-					<Modal.Title>About MeetMe</Modal.Title>
+					<Modal.Title>About MidWays</Modal.Title>
 				</Modal.Header>
 				<Modal.Body>
 					<p>
-						Meet Me was created by Alex Hammer, Ari Khaytser, Luis Cordova,
+						MidWays was created by Alex Hammer, Ari Khaytser, Luis Cordova,
 						Santiago Darré, and Maggie Pierce for their Agile Development class.
-						Meet Me is intended for people who want to find a meeting point for
+						MidWays is intended for people who want to find a meeting point for
 						them and their friends or colleagues.{" "}
 					</p>
 
 					<p>
-						To use Meet Me, enter in at least two starting locations, select any
-						filter you want, and click search. Meet me will calculate the center
+						To use MidWays, enter in at least two starting locations, select any
+						filter you want, and click search. MidWays will calculate the center
 						point of the entered locations and return results nearby. If you
 						wish to save groups or commonly used locations, you can do so after
-						creating an account. You don't need an account to access Meet Me's
+						creating an account. You don't need an account to access MidWays's
 						basic functionality.
 					</p>
 

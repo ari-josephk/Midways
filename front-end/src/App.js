@@ -139,7 +139,7 @@ function App() {
       
 			<div className="html">
       <Helmet>
-        <title>MeetMe</title>
+        <title>MidWays</title>
         <meta name="description" content="Find the best place to meet up with your friends. Plan a meet up with up to 10 friends, and ensure that everyone has a fair travel time." />
       </Helmet>
 				<button class="header-btn">

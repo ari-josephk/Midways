@@ -11,7 +11,7 @@ npm run start
 The app should now be hosted locally on port 3001. Access it at localhost:3001
 
 ## How to Use
-To use Meet Me, enter in at least two starting locations, select any filter you want, and click search. Meet me will calculate the center point of the entered locations and return results nearby. If you wish to save groups or commonly used locations, you can do so after creating an account. You don't need an account to access Meet Me's basic functionality.
+To use MidWays, enter in at least two starting locations, select any filter you want, and click search. MidWays will calculate the center point of the entered locations and return results nearby. If you wish to save groups or commonly used locations, you can do so after creating an account. You don't need an account to access MidWays's basic functionality.
 
 When searching, rememeber you are only require to provide input for the query box. So, you are not required to provide input for any of the dropdown filters. 
 
