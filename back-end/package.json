@@ -15,6 +15,7 @@
     "mocha": "^8.3.2",
     "mongoose": "^5.12.3",
     "nanoid": "^3.1.22",
+    "nodemon": "^2.0.12",
     "node-fetch": "^2.6.1",
     "nyc": "^15.1.0",
     "querystring": "^0.2.1",
@@ -23,7 +24,7 @@
     "turf": "^3.0.14"
   },
   "devDependencies": {
-    "nodemon": "^2.0.7"
+    "nodemon": "^2.0.12"
   },
   "scripts": {
     "start": "nodemon server.js",
