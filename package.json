@@ -4,7 +4,7 @@
     "client": "cd front-end && npm run build",
     "server": "cd back-end && npm start",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "start": "(npm run client) && (npm run server)"
+    "start": "(npm run install-packages) && (npm run client) && (npm run server)"
   },
   "dependencies": {
     "concurrently": "^6.0.2"
