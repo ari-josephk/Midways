@@ -5,7 +5,7 @@
 
 [![Node.js CDeployment](https://github.com/ajk745/project-setup-team-wilmington-circuit/actions/workflows/deploy.yml/badge.svg)](https://github.com/agile-dev-assignments/project-setup-team-wilmington-circuit/actions/workflows/deploy.yml)
 
-[Check out the project](http://MidWays-agiledev.site/)
+[Check out the project](https://midways-dev-f2apmcgehq-uc.a.run.app/)
 
 ## How to Use
 To use MidWays, enter in at least two starting locations, select any filter you want, and click search. MidWays will calculate the center point of the entered locations and return results nearby. If you wish to save groups or commonly used locations, you can do so after creating an account. You don't need an account to access MidWays's basic functionality.
