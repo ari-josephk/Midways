@@ -3,8 +3,6 @@
 
 [![Node.js CI](https://github.com/ajk745/project-setup-team-wilmington-circuit/actions/workflows/node.js.yml/badge.svg)](https://github.com/agile-dev-assignments/project-setup-team-wilmington-circuit/actions/workflows/node.js.yml)
 
-[![Node.js CDeployment](https://github.com/ajk745/project-setup-team-wilmington-circuit/actions/workflows/deploy.yml/badge.svg)](https://github.com/agile-dev-assignments/project-setup-team-wilmington-circuit/actions/workflows/deploy.yml)
-
 [Check out the project](https://midways-dev-f2apmcgehq-uc.a.run.app/)
 
 ## How to Use
