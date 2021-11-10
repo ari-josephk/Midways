@@ -10,9 +10,8 @@ const User = new mongoose.Schema({
 mongoose.model("User", User);
 
 const db = (process.env.NODE_ENV === "PRODUCTION") ?
-	`mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0.acxjy.mongodb.net/myFirstDatabase?retryWrites=true&w=majority` :
+	`mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0.w3xow.mongodb.net/myFirstDatabase?retryWrites=true&w=majority` :
 	`mongodb://localhost/MidWays`;
-
 const connect = () => {
 	mongoose.connect(db, {useNewUrlParser: true});
 };
