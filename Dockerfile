@@ -6,4 +6,4 @@ COPY . /docker-app/
 RUN npm run install-client
 RUN npm run install-server
 RUN npm run client
-CMD ["npm", "run", "server"]
+CMD ["npm", "start"]
