@@ -16,7 +16,10 @@ const MapDisplay = props => {
                markerBounds.extend(loc) 
             }
         })
-        if(!markerBounds.isEmpty() && map) map.fitBounds(markerBounds);
+        if(!markerBounds.isEmpty() && map){
+            map.fitBounds(markerBounds);
+            map.setZoom(map.getZoom() + 1)
+        } 
         console.log(props.placeList)
     })
 
@@ -28,7 +31,10 @@ const MapDisplay = props => {
                markerBounds.extend(loc) 
             }
         })
-        if(!markerBounds.isEmpty() && map) map.fitBounds(markerBounds);
+        if(!markerBounds.isEmpty() && map) {
+            map.fitBounds(markerBounds);
+            map.setZoom(map.getZoom() + 1)
+        } 
     }
 
     return (

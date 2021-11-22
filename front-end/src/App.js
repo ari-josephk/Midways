@@ -62,6 +62,7 @@ function App() {
         setSearchError('Search query is too short. Please enter a valid search.')
         return
       }
+      document.getElementById("map-container").scrollIntoView({behavior: 'smooth', inline: 'nearest'});
       setSearchData(searchData)
       setSharelink(null)
       setSharelinkError(false)
@@ -216,7 +217,7 @@ function App() {
 							</p>
 						</div>
 					</div>
-					<div className="map-result-container">
+					<div id = "map-container" className="map-result-container">
 						<MapDisplay
 							set={mapLoaded}
 							//doesn't update properly when passes as array...
