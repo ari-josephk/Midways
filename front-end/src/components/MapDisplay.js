@@ -18,7 +18,7 @@ const MapDisplay = props => {
         })
         if(!markerBounds.isEmpty() && map){
             map.fitBounds(markerBounds);
-            map.setZoom(map.getZoom() + 1)
+            map.setZoom(map.getZoom() - 1)
         } 
         console.log(props.placeList)
     })
@@ -33,7 +33,7 @@ const MapDisplay = props => {
         })
         if(!markerBounds.isEmpty() && map) {
             map.fitBounds(markerBounds);
-            map.setZoom(map.getZoom() + 1)
+            map.setZoom(map.getZoom() - 1)
         } 
     }
 
