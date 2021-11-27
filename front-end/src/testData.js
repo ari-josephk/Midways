@@ -109,6 +109,13 @@ const getGroups = async(id_token) => {
     return data;
 }
 
+const getSearchCount = async() => {
+    const res = await axios.get('/api/search-count');
+    const data = res.data;
+    console.log(data)
+    return data
+}
+
 const deleteGroup = async(_id, id_token) => {
     const res = await axios.delete('group/delete?q=' + _id, {headers: {
         'Authorization': id_token
@@ -150,5 +157,6 @@ const deleteAllLocations = async(id_token) => {
     console.log(data);
 }
 
-export default {getResults_mock, getPlaceLocation, getPlaceAddress, getFriends_mock, getPlaceImage, getGroups_mock, search, getSharelink, uploadSharelink, getGroups, deleteGroup, deleteAllGroups, getLocations, deleteLocation, deleteAllLocations}
+
+export default {getResults_mock, getPlaceLocation, getPlaceAddress, getFriends_mock, getPlaceImage, getGroups_mock, search, getSharelink, uploadSharelink, getGroups, getSearchCount, deleteGroup, deleteAllGroups, getLocations, deleteLocation, deleteAllLocations}
 

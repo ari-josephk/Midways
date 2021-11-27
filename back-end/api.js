@@ -5,6 +5,7 @@ const geocenter = require('./algo/geocenter').geoCenter
 const bodyParser = require('body-parser');
 const placeInfo = require('./algo/placeinfo');
 const fetchPhoto = require('./algo/photoReference')
+const SearchCount = require('./models/SearchCount')
 
 const router = express.Router();
 
@@ -87,6 +88,11 @@ router.post('/search', (req, res) => {
 
                 placeInfo(data.loc.lat, data.loc.lng, data.averageDistance, search.query, search.type, (search.hours == 'opennow'), search.price, search.rating).then(places => {
                     if(places){
+                        SearchCount.updateOne({}, {$inc: {searchCount: 1}}, (e) => {
+                            if(e){
+                                res.send('Internal error logging this search: ' + e)
+                            }
+                        })
                         res.send({loc:data.loc, averageDuration: data.averageDuration, placeList: places}) 
                         //Sends both location and nearby places in one response
                     }
@@ -107,6 +113,24 @@ router.post('/search', (req, res) => {
             res.status(500);
             res.send('Internal error geocentering starting locations: ' + e)
         })
+    }
+})
+
+router.get('/search-count', (req, res) => {
+    try{
+        SearchCount.findOne({}, (e, doc) => {
+            if(e){
+                res.status(500);
+                res.send('Internal error retrieving search count from db')
+              }
+              else{
+                res.json(doc.searchCount);
+              }
+        })
+    }
+    catch{
+        res.status(500);
+        res.send('Internal error retrieving search count from db')
     }
 })
 

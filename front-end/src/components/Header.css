@@ -19,6 +19,10 @@
     padding: 0 1rem;
 }
 
+.header_nav_items {
+    margin: 10px;
+}
+
 .header_nav_items ul {
     list-style: none;
     margin: 0;
@@ -47,4 +51,14 @@
 
 .login {
     margin-left: 10px;
+}
+
+#total-trip-counter{
+    color: #ADABA5;
+}
+
+@media screen and (max-width: 999px) {
+    #total-trip-counter{
+        display: none;
+    }
 }
